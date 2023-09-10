@@ -4,7 +4,7 @@
 IsKPeriodic::IsKPeriodic(std::string sub, int lenght_sub, int lenght_periodic)
 	: _sub(sub), _lenght_sub(lenght_sub), _lenght_periodic(lenght_periodic) {}
 
-void IsKPeriodic::substr(std::string periodic)
+void IsKPeriodic::substr(std::string periodic) // определение длины подстроки
 {
 	_lenght_periodic = periodic.size();
 	_sub.push_back(periodic[0]);
